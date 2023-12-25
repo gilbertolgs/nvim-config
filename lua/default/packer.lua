@@ -21,6 +21,8 @@ return require('packer').startup(function(use)
   use('nvim-tree/nvim-tree.lua')
   use('nvim-tree/nvim-web-devicons')
   use('vim-airline/vim-airline')
+
+  use ('Mofiqul/vscode.nvim')
   use{
 	  'ggandor/leap.nvim',
 	  dependencies = { "tpope/vim-repeat" },
@@ -41,23 +43,33 @@ return require('packer').startup(function(use)
 	  tag = "*",
 	  requires = "nvim-tree/nvim-web-devicons"
   }
+  use{
+	  -- LSP Configuration & Plugins
+	  'neovim/nvim-lspconfig',
+	  -- Automatically install LSPs to stdpath for neovim
+	   'williamboman/mason.nvim', config = true,
+	  'williamboman/mason-lspconfig.nvim',
 
-  use ('Mofiqul/vscode.nvim')
+	  -- Useful status updates for LSP
+	  -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
+	   'j-hui/fidget.nvim', opts = {} ,
+
+	  -- Additional lua configuration, makes nvim stuff amazing!
+	  'folke/neodev.nvim'
+  }
 
   use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v3.x',
-	  requires = {
-		  --- Uncomment these if you want to manage LSP servers from neovim
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
+	  -- Autocompletion
+	  'hrsh7th/nvim-cmp',
 
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  -- Autocompletion
-		  {'hrsh7th/nvim-cmp'},
-		  {'hrsh7th/cmp-nvim-lsp'},
-		  {'L3MON4D3/LuaSnip'},
-	  }
+	  'L3MON4D3/LuaSnip',
+	  'saadparwaiz1/cmp_luasnip',
+
+	  -- Adds LSP completion capabilities
+	  'hrsh7th/cmp-nvim-lsp',
+	  'hrsh7th/cmp-path',
+
+	  -- Adds a number of user-friendly snippets
+	  'rafamadriz/friendly-snippets',
   }
 end)

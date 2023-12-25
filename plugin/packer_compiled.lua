@@ -89,6 +89,26 @@ _G.packer_plugins = {
     path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
@@ -99,11 +119,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\leap.nvim",
     url = "https://github.com/ggandor/leap.nvim"
   },
-  ["lsp-zero.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
-    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
-  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
@@ -113,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\gilbe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
